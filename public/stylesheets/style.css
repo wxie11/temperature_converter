@@ -1,8 +1,42 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(110deg, #f7f5e6 60%, #53658f 60%);
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+button {
+  background-color: #333a56;
+  color: white;
+  text-transform: uppercase;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+input:disabled {
+  background-color: #e8e8e8;
+}
+
+input[type=text], button {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#fahrenheitToCelsius, #celsiusToFahrenheit {
+  background-color: rgba(232, 232, 232, 0.51);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 20px;
+  margin: 3% 15% 3% 15%;
 }

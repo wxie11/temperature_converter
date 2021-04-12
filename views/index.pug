@@ -1,5 +1,33 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    h1= title 
+  #celsiusToFahrenheit
+    h2 Celsius To Fahrenheit
+    label(for='celsiusToConvert') Celsius:
+    br
+    input#celsiusToConvert(type='text' name='celsiusToConvert')
+    br
+    label(for='resultInFahrenheit') Fahrenheit:
+    br
+    input#resultInFahrenheit(type='text' name='resultInFahrenheit' disabled)
+    br
+    button#convertCelsiusToFahrenheit(type='button') Convert Celsius To Fahrenheit
+    button.clearInput(type='button') Clear
+    
+  #fahrenheitToCelsius
+    h2 Fahrenheit To Celsius
+    label(for='fahrenheitToConvert') Fahrenheit:
+    br
+    input#fahrenheitToConvert(type='text' name='fahrenheitToConvert')
+    br
+    label(for='resultInCelsius') Celsius:
+    br
+    input#resultInCelsius(type='text' name='resultInCelsius' disabled)
+    br
+    button#convertFahrenheitToCelsius(type='button') Convert Fahrenheit To Celsius
+    button.clearInput(type='button') Clear
+  footer
+    | &copy; 2021 Wenwen Xie | wxie11@hawk.iit.edu
+

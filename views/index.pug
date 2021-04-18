@@ -3,6 +3,7 @@ extends layout
 block content
   header
     h1= title 
+    p#error
   #celsiusToFahrenheit
     h2 Celsius To Fahrenheit
     label(for='celsiusToConvert') Celsius:
@@ -14,7 +15,6 @@ block content
     input#resultInFahrenheit(type='text' name='resultInFahrenheit' disabled)
     br
     button#convertCelsiusToFahrenheit(type='button') Convert Celsius To Fahrenheit
-    button.clearInput(type='button') Clear
     
   #fahrenheitToCelsius
     h2 Fahrenheit To Celsius
@@ -27,7 +27,6 @@ block content
     input#resultInCelsius(type='text' name='resultInCelsius' disabled)
     br
     button#convertFahrenheitToCelsius(type='button') Convert Fahrenheit To Celsius
-    button.clearInput(type='button') Clear
   footer
     | &copy; 2021 Wenwen Xie | wxie11@hawk.iit.edu
 

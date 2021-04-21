@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "devstart": "DEBUG=temperature_converter:* nodemon ./bin/www"
+    "devstart": "DEBUG=temperature_converter:* nodemon ./bin/www",
+    "test": "node ./test/test.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

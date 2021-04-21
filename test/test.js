@@ -33,11 +33,11 @@ assert.strictEqual(false, isValidTemperature(""));
 
 // Test covertCelsiusToFahrenheit()
 assert.strictEqual(-29, covertCelsiusToFahrenheit(-34));
-assert.strictEqual(32, covertCelsiusToFahrenheit(0));
+assert.strictEqual(-0, covertCelsiusToFahrenheit(-18));
 assert.strictEqual(93, covertCelsiusToFahrenheit(34));
 
 // Test covertFahrenheitToCelsius()
 assert.strictEqual(-73, covertFahrenheitToCelsius(-100));
-assert.strictEqual(-18, covertFahrenheitToCelsius(0));
+assert.strictEqual(0, covertFahrenheitToCelsius(32));
 assert.strictEqual(38, covertFahrenheitToCelsius(100));
 

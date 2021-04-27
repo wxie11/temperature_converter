@@ -35,7 +35,7 @@ window.addEventListener('load', (event) => {
       document.getElementById('resultInFahrenheit').value = resultInFahrenheit;
     }
     else {
-      document.getElementById('error').innerHTML = 'Temperature must be not empty and a valid number.';
+      document.getElementById('error').innerHTML = 'Temperature must be a valid number greater or less than 0.';
     }
   });
 
@@ -51,7 +51,7 @@ window.addEventListener('load', (event) => {
       document.getElementById('resultInCelsius').value = resultInCelsius;
     }
     else {
-      document.getElementById('error').innerHTML = 'Temperature must be not empty and a valid number.';
+      document.getElementById('error').innerHTML = 'Temperature must be a valid number greater or less than 0.';
     }
   });
 });
